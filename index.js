@@ -18,14 +18,14 @@ function parse (file) {
     symbolNode.attr('viewBox', svgNode.attr('viewbox'))
     symbolNode.attr('id', fileName)
     symbolNode.append(svgNode.contents())
-    symbolNode
-      .children()
-      .each(function (i, kid) {
-        $(kid)
-          .removeAttr('fill')
-          .removeAttr('stroke')
-          .removeAttr('style')
-      })
+    // symbolNode
+    //   .children()
+    //   .each(function (i, kid) {
+    //     $(kid)
+    //       .removeAttr('fill')
+    //       .removeAttr('stroke')
+    //       .removeAttr('style')
+    //   })
     $('svg').append(symbolNode)
   }
 }
